@@ -6,10 +6,10 @@ entrada = input(
     'Entre com o CPF (XXX.XXX.XXX-XX) ou CNPJ (XX.XXX.XXX/XXXX-XX)'
 )
 if fullmatch(r'[0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}', entrada):
-    print('CPF')
+    print('Você entrou com um CPF')
 elif fullmatch(
     r'[0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}', entrada
 ):
-    print('CNPJ')
+    print('Você entrou com um CNPJ')
 else:
     print('Não é um CPF ou CNPJ')
