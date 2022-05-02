@@ -3,7 +3,7 @@
 from re import fullmatch
 
 entrada = input(
-    'Entre com o CPF (XXX.XXX.XXX-XX) ou CNPJ (XX.XXX.XXX/XXXX-XX)'
+    'Entre com o CPF (XXX.XXX.XXX-XX) ou CNPJ (XX.XXX.XXX/XXXX-XX): '
 )
 if fullmatch(r'[0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}', entrada):
     print('Você entrou com um CPF')
